@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference Between Var and Let Variable</title>
+
+    <style>
+       table{
+        border-collapse: collapse;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+       }
+       th{
+        font-size: 20px;
+       }
+       .tr1{
+        background-color: greenyellow;
+       }
+
+       tr{
+        background-color: white;
+        font-size: large;
+       }
+    </style>
+</head>
+
+<body>
+
+    <table border="1px">
+        <tr class="tr1">
+            <th>Parameters</th>
+            <th>Var</th>
+            <th>Let</th>
+        </tr>
+        <tr>
+            <td>Introduction in JavaScript</td>
+            <td>Var has been a part of JavaScript since its inception.</td>
+            <td>Let was introduced in the ES 2015 (ES6) version of JavaScript.</td>
+        </tr>
+        <tr>
+            <td>Scope</td>
+            <td>Var is globally scoped.</td>
+            <td>Let is block-scoped.</td>
+        </tr>
+        <tr>
+            <td>Access and Declaration</td>
+            <td>Var can be declared and accessed globally.</td>
+            <td>Let can be declared globally, but its access is limited to the block in which it is declared.</td>
+        </tr>
+        <tr>
+            <td>Redeclaration</td>
+            <td>Variables declared using var can be re-declared <br>and updated within the same scope.</td>
+            <td>Variables declared with let can be updated but not <br> re-declared within the same scope.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
