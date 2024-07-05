@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+
+</head>
+
+<body>
+    
+    <ul>
+        <li> <a href="index.html">DAY 1</a></li>
+        <li> <a href="var&let.html">DAY2</a></li>
+        <li><a href="restaurantorderapp.html">DAY3</a></li>
+        <li> <a href="logicaloperator.html">DAY 4 </a></li>
+        
+    </ul>
+
+
+    <script>
+
+        let restaurant={
+            Name:"Bitemore",
+            African_dish:{
+                swallow:['eba','fufu', 'amala'],
+                soup:['Egusi', 'Okro', 'Fida'],
+                meat:['beaf', 'chicken', 'fish'],
+
+            },
+            chinese_dish:{
+                meat:['frog', 'crab'],
+                rice:['chinese rice', 'ofada'],
+
+            },
+            drink:['coke', 'fanta', 'pepsi'],
+            amount:4000,
+        }
+
+        alert(`I need a plate of ${restaurant.chinese_dish.rice[1]}, with one lap of ${restaurant.African_dish.meat[1]}. with a bottle of ${restaurant.drink[2]}, and everything should be ${restaurant.amount} naira `);
+    </script>
+    
+</body>
+</html>
