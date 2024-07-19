@@ -6,7 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS HISTORY</title>
 
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
     <style>
+        body {
+            padding-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+
+
+        }
+
+        @media (max-width:768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .header {
+                height: 60px;
+
+            }
+
+            .nav {
+                display: none;
+
+            }
+
+            .maincontent {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:1025px) {
+            body {
+                font-size: 18px;
+            }
+
+            .header {
+                height: 100px;
+
+            }
+
+            .nav {
+                display: block;
+
+            }
+
+            .maincontent {
+                width: 60%;
+            }
+        }
+
         * {
             /* font-size: large; */
             background-color: white(174, 241, 17, 0.562);
@@ -23,7 +80,7 @@
             font-size: 20px;
         }
 
-        .div1{
+        .div1 {
             background-color: rgba(17, 214, 240, 0.253);
             border-radius: 10px;
             box-shadow: inset -20px -15px;
@@ -31,136 +88,292 @@
             margin-bottom: 30px;
             width: 100%;
             margin: 20px 20px 20px 20px;
-            
+
 
         }
 
-        .div2{
+        .div2 {
             background-color: blanchedalmond;
             border-radius: 25px;
             margin-top: 15px;
-            
-        }
 
+        }
     </style>
 </head>
 
+
+
+
 <body>
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top" class="nav">
+        <div class="container-fluid" class="maincontent">
+            <a class="navbar-brand" href="#" class="header">HISTORY OF JAVASCRIPT (DAY 1)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">TASK</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">DAY 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="var&let.html">DAY 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="restaurantorderapp.html">DAY 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logicaloperator.html">DAY 4</a>
+                        </li>
+                        <li class="navbar-expand-lg dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
     <ul>
         <li> <a href="index.html">DAY 1</a></li>
         <li> <a href="var&let.html">DAY2</a></li>
         <li><a href="restaurantorderapp.html">DAY3</a></li>
         <li> <a href="logicaloperator.html">DAY 4 </a></li>
-        
+
     </ul>
 
-    <h1>JavaScript History</h1>
+    
+        <h1>JavaScript History</h1>
 
-    <img src="image/aerial-view-business-team_53876-124515.webp" alt="">
+        <img src="image/aerial-view-business-team_53876-124515.webp" alt="">
 
-    <h2>JavaScript / ECMAScript</h2> 
-    <p class="p1">JavaScript was invented by Brendan Eich in 1995.
+        <h2>JavaScript / ECMAScript</h2>
+        <p class="p1">JavaScript was invented by Brendan Eich in 1995.
 
-        It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+            It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
 
-        After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the
-        Firefox browser. Mozilla's latest version was 1.8.5. (Identical to ES5).
+            After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for
+            the
+            Firefox browser. Mozilla's latest version was 1.8.5. (Identical to ES5).
 
-        Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).</p>
+            Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).</p>
 
 
         <div class="div1">
-    <p class="p2">
+            <p class="p2">
 
-        <b> <h1>Year ECMA Browser </h1> </b>
-        1995 JavaScript was invented by Brendan Eich <br>
-        1996 Netscape 2 was released with JavaScript 1.0 <br>
-        1997 JavaScript became an ECMA standard (ECMA-262) <br>
-        1997 ES1 ECMAScript 1 was released <br>
-        1997 ES1 IE 4 was the first browser to support ES1 <br>
-        1998 ES2 ECMAScript 2 was released <br>
-        1998 Netscape 42 was released with JavaScript 1.3 <br>
-        1999 ES2 IE 5 was the first browser to support ES2 <br>
-        1999 ES3 ECMAScript 3 was released <br>
-        2000 ES3 IE 5.5 was the first browser to support ES3 <br>
-        2000 Netscape 62 was released with JavaScript 1.5 <br>
-        2000 Firefox 1 was released with JavaScript 1.5 <br>
-        2008 ES4 ECMAScript 4 was abandoned <br>
-        2009 ES5 ECMAScript 5 was released <br>
-        2011 ES5 IE 9 was the first browser to support ES5 * <br>
-        2011 ES5 Firefox 4 was released with JavaScript 1.8.5 <br>
-        2012 ES5 Full support for ES5 in Safari 6 <br>
-        2012 ES5 Full support for ES5 in IE 10 <br>
-        2012 ES5 Full support for ES5 in Chrome 23 <br>
-        2013 ES5 Full support for ES5 in Firefox 21 <br>
-        2013 ES5 Full support for ES5 in Opera 15 <br>
-        2014 ES5 Full support for ES5 in all browsers <br>
-        2015 ES6 ECMAScript 6 was released <br>
-        2016 ES6 Full support for ES6 in Chrome 51 <br>
-        2016 ES6 Full support for ES6 in Opera 38 <br>
-        2016 ES6 Full support for ES6 in Safari <br>
-        2017 ES6 Full support for ES6 in Firefox 54 <br>
-        2017 ES6 Full support for ES6 in Edge 15 <br>
-        2018 ES6 Full support for ES6 in all browsers **
-    </p>
+                <b>
+                    <h1>Year ECMA Browser </h1>
+                </b>
+                1995 JavaScript was invented by Brendan Eich <br>
+                1996 Netscape 2 was released with JavaScript 1.0 <br>
+                1997 JavaScript became an ECMA standard (ECMA-262) <br>
+                1997 ES1 ECMAScript 1 was released <br>
+                1997 ES1 IE 4 was the first browser to support ES1 <br>
+                1998 ES2 ECMAScript 2 was released <br>
+                1998 Netscape 42 was released with JavaScript 1.3 <br>
+                1999 ES2 IE 5 was the first browser to support ES2 <br>
+                1999 ES3 ECMAScript 3 was released <br>
+                2000 ES3 IE 5.5 was the first browser to support ES3 <br>
+                2000 Netscape 62 was released with JavaScript 1.5 <br>
+                2000 Firefox 1 was released with JavaScript 1.5 <br>
+                2008 ES4 ECMAScript 4 was abandoned <br>
+                2009 ES5 ECMAScript 5 was released <br>
+                2011 ES5 IE 9 was the first browser to support ES5 * <br>
+                2011 ES5 Firefox 4 was released with JavaScript 1.8.5 <br>
+                2012 ES5 Full support for ES5 in Safari 6 <br>
+                2012 ES5 Full support for ES5 in IE 10 <br>
+                2012 ES5 Full support for ES5 in Chrome 23 <br>
+                2013 ES5 Full support for ES5 in Firefox 21 <br>
+                2013 ES5 Full support for ES5 in Opera 15 <br>
+                2014 ES5 Full support for ES5 in all browsers <br>
+                2015 ES6 ECMAScript 6 was released <br>
+                2016 ES6 Full support for ES6 in Chrome 51 <br>
+                2016 ES6 Full support for ES6 in Opera 38 <br>
+                2016 ES6 Full support for ES6 in Safari <br>
+                2017 ES6 Full support for ES6 in Firefox 54 <br>
+                2017 ES6 Full support for ES6 in Edge 15 <br>
+                2018 ES6 Full support for ES6 in all browsers **
+            </p>
 
-</div>
+        </div>
 
-    Note
-    * Internet Explorer 9 did not support ES5 "use strict". <br>
+        Note
+        * Internet Explorer 9 did not support ES5 "use strict". <br>
 
-    ** Internet Explorer 11 does not support ES6. <br>
+        ** Internet Explorer 11 does not support ES6. <br>
 
-    <h3 class="myh1">The ECMA Technical Committee 39 </h3><br>
-    In 1996, Netscape and Brendan Eich took JavaScript to <br>the ECMA international standards organization, and a
-    technical committee (TC39) was created to develop the language.
+        <h3 class="myh1">The ECMA Technical Committee 39 </h3><br>
+        In 1996, Netscape and Brendan Eich took JavaScript to <br>the ECMA international standards organization, and a
+        technical committee (TC39) was created to develop the language.
 
-    ECMA-262 Edition 1 was released in June 1997. <br>
-
-
-
-    <h3 class="myh2">From ES4 to ES6</h3>
-    When the TC39 committee got together in Oslo in 2008, to agree on ECMAScript 4, <br>they were divided into 2 very
-    different camps:
-
-    <h3 class="myh3">The ECMAScript 3.1 Camp: </h3><br>
-    Microsoft and Yahoo who wanted an incremental upgrade from ES3.
-
-    <h3>The ECMAScript 4 Camp:</h3>
-    Adobe, Mozilla, Opera, and Google who wanted a massive ES4 upgrade. <br>
-
-    August 13 2008, Brendan Eich wrote an email: <br>
-
-    It's no secret that the JavaScript standards body, Ecma's Technical Committee 39, <br>has been split for over a
-    year, with some members favoring ES4, a major fourth edition to ECMA-262, and others advocating ES3.1 based on the
-    existing ECMA-262 Edition 3 (ES3) specification. Now, I'm happy to report, the split is over.
-
-    <div class="div2">
-    <h3 class="myh4">The solution was to work together:</h3>
-    ECMAScript 4 was renamed to ES5 <br>
-    ES5 should be an incremental upgrade of ECMAScript 3. <br>
-    Features of ECMAScript 4 should be picked up in later versions. <br>
-    TC39 should develop a new major release, bigger in scope than ES5. <br>
-    The planned new release (ES6) was codenamed "Harmony" (Because of the split it created?). <br>
-
-    ES5 was a huge success. It was released in 2009, and all major browsers (including Internet Explorer) were fully
-    compliant by July 2013: <br>
-
-    Chrome 23 IE10 / Edge Firefox 21 Safari 6 Opera 15 <br>
-    Nov 2012 Sep 2012 May 2013 Jul 2012 Jul 2013 <br>
-    ES6 was also a huge success. It was released in 2015, and all major browsers were fully compliant by March 2017:
-    <br>
-
-    Chrome 51 Edge 14 Firefox 52 Safari 10 Opera 38 <br>
-    May 2016 Aug 2016 Mar 2017 Sep 2016 Jun 2016 <br>
-
-    </p>
-
-</div>
+        ECMA-262 Edition 1 was released in June 1997. <br>
 
 
 
+        <h3 class="myh2">From ES4 to ES6</h3>
+        When the TC39 committee got together in Oslo in 2008, to agree on ECMAScript 4, <br>they were divided into 2
+        very
+        different camps:
+
+        <h3 class="myh3">The ECMAScript 3.1 Camp: </h3><br>
+        Microsoft and Yahoo who wanted an incremental upgrade from ES3.
+
+        <h3>The ECMAScript 4 Camp:</h3>
+        Adobe, Mozilla, Opera, and Google who wanted a massive ES4 upgrade. <br>
+
+        August 13 2008, Brendan Eich wrote an email: <br>
+
+        It's no secret that the JavaScript standards body, Ecma's Technical Committee 39, <br>has been split for over a
+        year, with some members favoring ES4, a major fourth edition to ECMA-262, and others advocating ES3.1 based on
+        the
+        existing ECMA-262 Edition 3 (ES3) specification. Now, I'm happy to report, the split is over.
+
+        <div class="div2">
+            <h3 class="myh4">The solution was to work together:</h3>
+            ECMAScript 4 was renamed to ES5 <br>
+            ES5 should be an incremental upgrade of ECMAScript 3. <br>
+            Features of ECMAScript 4 should be picked up in later versions. <br>
+            TC39 should develop a new major release, bigger in scope than ES5. <br>
+            The planned new release (ES6) was codenamed "Harmony" (Because of the split it created?). <br>
+
+            ES5 was a huge success. It was released in 2009, and all major browsers (including Internet Explorer) were
+            fully
+            compliant by July 2013: <br>
+
+            Chrome 23 IE10 / Edge Firefox 21 Safari 6 Opera 15 <br>
+            Nov 2012 Sep 2012 May 2013 Jul 2012 Jul 2013 <br>
+            ES6 was also a huge success. It was released in 2015, and all major browsers were fully compliant by March
+            2017:
+            <br>
+
+            Chrome 51 Edge 14 Firefox 52 Safari 10 Opera 38 <br>
+            May 2016 Aug 2016 Mar 2017 Sep 2016 Jun 2016 <br>
+
+            </p>
+
+        </div>
+
+
+    
+
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        // let myTime;
+        // let myTime=new Date().getHours();
+
+        // if(myTime<12){
+        //     alert=(Good Morning)
+        // }
+        // else if(myTime<5) {
+        //     alert(Good afternoon!)
+        // }
+        // else if(myTime>5){
+        //     alert(Good Evening!)
+        // }
+
+        // else if(myTime>6){
+        //     alert(Good Evening!)
+        // }
+        // else if(myTime>7){
+        //     alert(Good Evening!)
+        // }
+
+        // else if(myTime>8){
+        //     alert(Good Evening!)
+        // }
+        // else if(myTime>9){
+        //     alert(Good Evening!)
+        // }
+        // else if(myTime>10){
+        //     alert(Good Evening!)
+        // }
+        // else if(myTime>11){
+        //     alert(Good Evening!)
+        // }
+        // else (myTime){
+        //     alert(Good Day!)
+        // }
+
+
+
+        // let myTime;
+
+        let myTime = new Date().getHours();
+
+        if (myTime < 12) {
+            myTime = ("Good Morning");
+        }
+        else if (myTime < 5) {
+            myTime = ("Good afternoon!");
+        }
+        else if (myTime > 5) {
+            myTime = ("Good Evening!");
+        }
+
+        else if (myTime > 6) {
+            myTime = ("Good Evening!");
+        }
+        else if (myTime > 7) {
+            myTime = ("Good Evening!");
+        }
+
+        else if (myTime > 8) {
+            myTime = ("Good Evening!");
+        }
+        else if (myTime > 9) {
+            myTime = ("Good Evening!")
+        }
+        else if (myTime > 10) {
+            myTime = ("Good Evening!");
+        }
+        else if (myTime > 11) {
+            myTime = ("Good Evening!");
+        }
+        else if (myTime > 0) {
+            myTime = ("Good Morning!");
+        }
+
+        else {
+            myTime = ("Good Morning!");
+        }
+
+        alert(myTime);
+
+    </script>
 
 </body>
+
+
 
 </html>

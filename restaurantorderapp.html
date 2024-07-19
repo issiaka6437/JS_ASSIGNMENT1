@@ -5,9 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant App</title>
 
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <style>
+       
+        body{
+            padding-top: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            
+
+        }
+        @media (max-width:768px) {
+            body{
+                font-size: 14px;
+            }
+            .header{
+                height: 60px;
+
+            }
+            .nav{
+                display: none;
+
+            }
+            .maincontent{
+                width: 100%;
+            }
+        }
+
+        @media (min-width:1025px){
+            body{
+                font-size: 18px;
+            }
+            .header {
+                height: 100px;
+
+            }
+            .nav{
+                display: block;
+
+            }
+            .maincontent{
+                width: 60%;
+            }
+        }
+
+
+
+    </style>
+
 </head>
 
 <body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top" class="nav">
+        <div class="container-fluid" class="maincontent">
+          <a class="navbar-brand" href="#"  class="header">Restaurant Order (DAY 3)</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">TASK</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">DAY 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="var&let.html">DAY 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="restaurantorderapp.html">DAY 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="logicaloperator.html">DAY 4</a>
+                </li>
+                <li class="navbar-expand-lg dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
     
     <ul>
         <li> <a href="index.html">DAY 1</a></li>
@@ -38,7 +145,55 @@
         }
 
         alert(`I need a plate of ${restaurant.chinese_dish.rice[1]}, with one lap of ${restaurant.African_dish.meat[1]}. with a bottle of ${restaurant.drink[2]}, and everything should be ${restaurant.amount} naira `);
+
+
+
+
+
+    
+        let myTime=new Date().getHours();
+
+    if(myTime<12){
+        myTime=("Good Morning");
+    }
+    else if(myTime<5) {
+        myTime=("Good afternoon!");
+    }
+    else if(myTime>5){
+        myTime=("Good Evening!");
+    }
+
+    else if(myTime>6){
+        myTime=("Good Evening!");
+    }
+    else if(myTime>7){
+        myTime=("Good Evening!");
+    }
+
+    else if(myTime>8){
+        myTime=("Good Evening!");
+    }
+    else if(myTime>9){
+        myTime=("Good Evening!")
+    }
+    else if(myTime>10){
+        myTime=("Good Evening!");
+    }
+    else if(myTime>11){
+        myTime=("Good Evening!");
+    }
+    else if(myTime>0){
+        myTime=("Good Morning!");
+    }
+    
+    else {
+        myTime=("Good Morning!");
+    }
+
+    alert(myTime);
     </script>
+
+<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     
 </body>
 </html>
